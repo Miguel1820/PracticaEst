@@ -33,6 +33,15 @@ public class GestorPrestamos {
         JOptionPane.showMessageDialog(null, "Préstamo para estudiante de ingeniería registrado exitosamente.");
     }
 
+
+
+
+
+
+
+
+
+
     public void registrarPrestamoDiseno() {
         String cedula = JOptionPane.showInputDialog("Ingrese la cédula del estudiante de diseño:");
         String nombre = JOptionPane.showInputDialog("Ingrese el nombre del estudiante:");
@@ -56,6 +65,16 @@ public class GestorPrestamos {
         JOptionPane.showMessageDialog(null, "Préstamo para estudiante de diseño registrado exitosamente.");
     }
 
+
+
+
+
+
+
+
+
+
+
     public void modificarPrestamoIngenieria() {
         String cedula = JOptionPane.showInputDialog("Ingrese la cédula del estudiante para modificar el préstamo:");
         EstudianteIngenieria estudiante = buscarPrestamoPorCedulaIngenieria(cedula);
@@ -75,6 +94,14 @@ public class GestorPrestamos {
         }
     }
 
+
+
+
+
+
+
+
+
     public void eliminarPrestamoIngenieria() {
         String cedula = JOptionPane.showInputDialog("Ingrese la cédula del estudiante para eliminar el préstamo:");
         EstudianteIngenieria estudiante = buscarPrestamoPorCedulaIngenieria(cedula);
@@ -87,6 +114,12 @@ public class GestorPrestamos {
             JOptionPane.showMessageDialog(null, "No se encontró un préstamo registrado para la cédula ingresada.");
         }
     }
+
+
+
+
+
+
 
     public void buscarPrestamoIngenieria() {
         String cedula = JOptionPane.showInputDialog("Ingrese la cédula del estudiante para buscar el préstamo:");
@@ -108,6 +141,11 @@ public class GestorPrestamos {
         return null;
     }
 
+
+
+
+
+
     public void modificarPrestamoDiseno() {
         String cedula = JOptionPane.showInputDialog("Ingrese la cédula del estudiante de diseño para modificar el préstamo:");
         EstudianteDiseno estudiante = buscarPrestamoPorCedulaDiseno(cedula);
@@ -127,6 +165,10 @@ public class GestorPrestamos {
         }
     }
 
+
+
+
+
     public void eliminarPrestamoDiseno() {
         String cedula = JOptionPane.showInputDialog("Ingrese la cédula del estudiante de diseño para eliminar el préstamo:");
         EstudianteDiseno estudiante = buscarPrestamoPorCedulaDiseno(cedula);
@@ -140,6 +182,11 @@ public class GestorPrestamos {
         }
     }
 
+
+
+
+
+
     public void buscarPrestamoDiseno() {
         String cedula = JOptionPane.showInputDialog("Ingrese la cédula del estudiante de diseño para buscar el préstamo:");
         EstudianteDiseno estudiante = buscarPrestamoPorCedulaDiseno(cedula);
@@ -151,6 +198,15 @@ public class GestorPrestamos {
         }
     }
 
+
+
+
+
+
+
+
+
+
     private EstudianteDiseno buscarPrestamoPorCedulaDiseno(String cedula) {
         for (EstudianteDiseno estudiante : vectorDisenadores) {
             if (estudiante.getCedula().equals(cedula)) {
@@ -159,6 +215,11 @@ public class GestorPrestamos {
         }
         return null;
     }
+
+
+
+
+
 
     public void imprimirInventarioTotal() {
         StringBuilder inventario = new StringBuilder("Inventario de Préstamos:\n");
